@@ -17,7 +17,7 @@ export default function ViewUser() {
 
   const loadUser = async () => {
     const result = await axios.get(
-      `https://heroku-backend-spring-d21e27d1ca1c.herokuapp.comuser/${id}`
+      `https://heroku-backend-spring-d21e27d1ca1c.herokuapp.com/user/${id}`
     );
     setUser(result.data);
   };
