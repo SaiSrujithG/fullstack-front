@@ -19,7 +19,10 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/user", user);
+    await axios.post(
+      "https://heroku-backend-spring-d21e27d1ca1c.herokuapp.com/user",
+      user
+    );
     navigate("/");
   };
 

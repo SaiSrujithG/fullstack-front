@@ -12,12 +12,16 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8080/users");
+    const result = await axios.get(
+      "https://heroku-backend-spring-d21e27d1ca1c.herokuapp.com/users"
+    );
     setUsers(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:8080/user/${id}`);
+    await axios.delete(
+      `https://heroku-backend-spring-d21e27d1ca1c.herokuapp.com/user/${id}`
+    );
     loadUsers();
   };
 
