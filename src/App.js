@@ -4,7 +4,7 @@ import Navbar from "./layout/Navbar";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import EditUser from "./users/EditUser";
+import EditUser from "./users/Edituser";
 import AddUser from "./users/Adduser";
 import ViewUser from "./users/viewuser";
 
