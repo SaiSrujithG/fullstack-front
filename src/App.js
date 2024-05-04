@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import EditUser from "./users/EditUser";
-import AddUser from "./users/Adduser";
-import ViewUser from "./users/viewuser";
+import AddUser from "./users/AddUser";
+import ViewUser from "./users/viewUser";
 
 function App() {
   return (
