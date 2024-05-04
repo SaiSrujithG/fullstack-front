@@ -13,7 +13,7 @@ export default function Home() {
 
   const loadUsers = async () => {
     const result = await axios.get(
-      "https://heroku-backend-spring-d21e27d1ca1c.herokuapp.com/users"
+      'https://heroku-backend-spring-d21e27d1ca1c.herokuapp.com/users'
     );
     setUsers(result.data);
   };
